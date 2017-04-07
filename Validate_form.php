@@ -49,13 +49,13 @@
 			$mail		= validate($_POST['mail']);
 			$website	= validate($_POST['website']);
 			$comment	= validate($_POST['comment']);
-			@$gender		= validate($_POST['gender']);
+			$gender		= validate($_POST['gender']);
 			
 			echo "Name: ".$name."<br/>";
 			echo "E-mail: ".$mail."<br/>";
 			echo "Website: ".$website."<br/>";
 			echo "Comment: ".$comment."<br/>";
-			echo "Gender: ".@$gender;
+			echo "Gender: ".$gender;
 		}
 		function validate($data)
 		{
